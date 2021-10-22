@@ -1,0 +1,96 @@
+@mixin sns-btn {
+    padding-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: #393939;
+}
+
+@mixin cast-box (){
+    .episode{
+        width: 500px;
+        height: 600px;
+        background-color: #F2F4E9;
+        text-align: center;
+        .index{
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: #FFFFFF;
+            width: 150px;
+            font-size: 20px;
+            padding: 10px 30px;
+        }
+        .episode-title{
+            font-size: 20px;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+        }
+        .place{
+            font-size: 16px;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        .actors{
+            display: inline-flex;
+            font-family: "ヒラギノ明朝 ProN";
+            flex-direction: row;
+            .actor{
+                width: 150px;
+                letter-spacing: 3px;
+                .image{
+                    img{
+                        width: 120px;
+                        height: 145px;
+                    }
+                }
+                .name{
+                    margin-top: 10px;
+                    color: #10B6E8;
+                    font-size: 20px;
+                }
+                .role{
+                    font-size: 12px;
+                    margin-top: 10px;
+                }
+                .story-position{
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .story-btn{
+            display: inline-block;
+            padding: 12px 50px;
+            margin-top: 40px;
+            width: 250px;
+            height: 53px;
+            background-color: #10B6E8;
+            color: #FFFFFF;
+            border-radius: 3px;
+            border: 1px solid #10B6E8;
+            transition: all 1.5s;
+            div{
+                display: inline;
+            }
+            img{
+                margin-left: 3px;
+            }
+            &:hover{
+                background-color: #FFFFFF;
+                color: #10B6E8;
+                transition: all 1.5s;
+                
+                img{
+                    display: none;
+                }
+                div{
+                    border-bottom: 1px solid #10B6E8;
+                    line-height: 10px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}

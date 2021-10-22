@@ -1,0 +1,583 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body header {
+  position: relative;
+}
+body header #header {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+body header #header .logo img {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  height: 28px;
+}
+body header #header .header-text {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "ヒラギノ明朝 ProN";
+  color: #393939;
+}
+body header #header .header-text .header-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+body header #header .header-text .header-list li {
+  list-style-type: none;
+  text-decoration: none;
+  padding-right: 20px;
+  letter-spacing: 5px;
+}
+body header #header .header-text .header-list li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #393939;
+  position: relative;
+}
+body header #header .header-text .header-list li a:hover {
+  color: #00b7de;
+  -webkit-filter: drop-shadow(1, 1, #FFFFFF);
+          filter: drop-shadow(1, 1, #FFFFFF);
+}
+body header #header .header-text .header-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #00b7de;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+body header #header .header-text .header-list li a:hover::after {
+  width: 100%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+body header #header .sns-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+}
+body header #header .sns-logo .twitter {
+  font-size: 2.0em;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+body header #header .sns-logo .facebook {
+  font-size: 2.0em;
+  border-radius: 50%;
+}
+body header .slider img {
+  height: 720px;
+  width: 100%;
+}
+body header .slider .slick-slide {
+  margin: 0 3px;
+}
+body main .official-sns {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "ヒラギノ明朝 ProN";
+}
+body main .official-sns .title {
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: normal;
+}
+body main .official-sns .twitter {
+  margin: 30px 15px 0px 30px;
+  display: inline-block;
+  border: 1px solid #393939;
+  padding: 12px 60px;
+}
+body main .official-sns .twitter .icon {
+  font-size: 1.5em;
+}
+body main .official-sns .twitter .btn {
+  padding-left: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-weight: normal;
+  color: #393939;
+}
+body main .official-sns .instagram {
+  margin: 30px 0px 0px 15px;
+  display: inline-block;
+  border: 1px solid #393939;
+  padding: 12px 60px;
+}
+body main .official-sns .instagram .icon {
+  font-size: 1.5em;
+}
+body main .official-sns .instagram .btn {
+  padding-left: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-weight: normal;
+  color: #393939;
+}
+body main .trailer {
+  text-align: center;
+  font-family: "ヒラギノ明朝 ProN";
+}
+body main .trailer .title {
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+body main .trailer .videos {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 100px;
+}
+body main .trailer .videos .video {
+  width: 500px;
+}
+body main .trailer .videos .video p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+body main .bridge {
+  background-image: url(images/bridge.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+body main .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+body main .introduction .introduction-image {
+  width: 600px;
+  height: 400px;
+}
+body main .introduction .texts {
+  font-family: "ヒラギノ明朝 ProN";
+  margin-left: 50px;
+  color: #393939;
+}
+body main .introduction .texts .title {
+  font-weight: normal;
+  font-size: 21px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+body main .introduction .texts .caption {
+  font-size: 20px;
+  line-height: 40px;
+}
+body main .introduction .texts .text {
+  margin-top: 30px;
+}
+body main .introduction .texts .text p {
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+body main .introduction .texts .text p span {
+  color: #00b7de;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+body main .story {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-image: url(images/story-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+body main .story .contents {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+  text-align: center;
+  font-family: "ヒラギノ明朝 ProN";
+  text-shadow: 0 0 0.5em #18292d, 0 0 0.5em #18292d, 0 0 0.5em #18292d;
+}
+body main .story .contents .title {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+}
+body main .story .contents .text {
+  width: 900px;
+  margin-top: 25px;
+  color: #FFFFFF;
+  font-size: 17px;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+body main #story {
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+body main #cast {
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+body main .cast {
+  text-align: center;
+  padding: 60px 100px 170px 50px;
+  font-family: "ヒラギノ明朝 ProN";
+}
+body main .cast .title {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: "ヒラギノ明朝 ProN";
+  margin-bottom: 65px;
+}
+body main .cast .episodes {
+  margin: 0 auto;
+  width: 1010px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .cast .episodes .episode-1 .episode {
+  width: 500px;
+  height: 600px;
+  background-color: #F2F4E9;
+  text-align: center;
+}
+body main .cast .episodes .episode-1 .episode .index {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  width: 150px;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+body main .cast .episodes .episode-1 .episode .episode-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+body main .cast .episodes .episode-1 .episode .place {
+  font-size: 16px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+body main .cast .episodes .episode-1 .episode .actors {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "ヒラギノ明朝 ProN";
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body main .cast .episodes .episode-1 .episode .actors .actor {
+  width: 150px;
+  letter-spacing: 3px;
+}
+body main .cast .episodes .episode-1 .episode .actors .actor .image img {
+  width: 120px;
+  height: 145px;
+}
+body main .cast .episodes .episode-1 .episode .actors .actor .name {
+  margin-top: 10px;
+  color: #10B6E8;
+  font-size: 20px;
+}
+body main .cast .episodes .episode-1 .episode .actors .actor .role {
+  font-size: 12px;
+  margin-top: 10px;
+}
+body main .cast .episodes .episode-1 .episode .actors .actor .story-position {
+  margin-top: 10px;
+  font-size: 12px;
+}
+body main .cast .episodes .episode-1 .episode .story-btn {
+  display: inline-block;
+  padding: 12px 50px;
+  margin-top: 40px;
+  width: 250px;
+  height: 53px;
+  background-color: #10B6E8;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #10B6E8;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+body main .cast .episodes .episode-1 .episode .story-btn div {
+  display: inline;
+}
+body main .cast .episodes .episode-1 .episode .story-btn img {
+  margin-left: 3px;
+}
+body main .cast .episodes .episode-1 .episode .story-btn:hover {
+  background-color: #FFFFFF;
+  color: #10B6E8;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+body main .cast .episodes .episode-1 .episode .story-btn:hover img {
+  display: none;
+}
+body main .cast .episodes .episode-1 .episode .story-btn:hover div {
+  border-bottom: 1px solid #10B6E8;
+  line-height: 10px;
+  padding-right: 30px;
+}
+body main .cast .episodes .episode-2 .episode {
+  width: 500px;
+  height: 600px;
+  background-color: #F2F4E9;
+  text-align: center;
+}
+body main .cast .episodes .episode-2 .episode .index {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  width: 150px;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+body main .cast .episodes .episode-2 .episode .episode-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+body main .cast .episodes .episode-2 .episode .place {
+  font-size: 16px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+body main .cast .episodes .episode-2 .episode .actors {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "ヒラギノ明朝 ProN";
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body main .cast .episodes .episode-2 .episode .actors .actor {
+  width: 150px;
+  letter-spacing: 3px;
+}
+body main .cast .episodes .episode-2 .episode .actors .actor .image img {
+  width: 120px;
+  height: 145px;
+}
+body main .cast .episodes .episode-2 .episode .actors .actor .name {
+  margin-top: 10px;
+  color: #10B6E8;
+  font-size: 20px;
+}
+body main .cast .episodes .episode-2 .episode .actors .actor .role {
+  font-size: 12px;
+  margin-top: 10px;
+}
+body main .cast .episodes .episode-2 .episode .actors .actor .story-position {
+  margin-top: 10px;
+  font-size: 12px;
+}
+body main .cast .episodes .episode-2 .episode .story-btn {
+  display: inline-block;
+  padding: 12px 50px;
+  margin-top: 40px;
+  width: 250px;
+  height: 53px;
+  background-color: #10B6E8;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #10B6E8;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+body main .cast .episodes .episode-2 .episode .story-btn div {
+  display: inline;
+}
+body main .cast .episodes .episode-2 .episode .story-btn img {
+  margin-left: 3px;
+}
+body main .cast .episodes .episode-2 .episode .story-btn:hover {
+  background-color: #FFFFFF;
+  color: #10B6E8;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+body main .cast .episodes .episode-2 .episode .story-btn:hover img {
+  display: none;
+}
+body main .cast .episodes .episode-2 .episode .story-btn:hover div {
+  border-bottom: 1px solid #10B6E8;
+  line-height: 10px;
+  padding-right: 30px;
+}
+body main .hulu {
+  height: 980px;
+  width: 1440px;
+  background-color: #68A935;
+  color: #FFFFFF;
+  font-family: "凸版文久見出しゴシック";
+  text-align: center;
+}
+body main .hulu .logo {
+  margin-top: 100px;
+  display: inline-block;
+}
+body main .hulu .logo img {
+  width: 180px;
+  height: 60px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+body main .hulu .catch-copy {
+  margin-top: 50px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+body main .hulu .hulu-contents {
+  margin-top: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 810px;
+}
+body main .hulu .hulu-contents .content {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  width: 250px;
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body main .hulu .hulu-contents .content h6 {
+  font-size: 24px;
+  color: #68A935;
+}
+body main .hulu .hulu-contents .content:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #68A935;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  opacity: 0.8;
+}
+body main .hulu .hulu-contents .content:hover h6 {
+  color: #FFFFFF;
+}
+body main .hulu p {
+  margin-top: 50px;
+  font-size: 12px;
+}
+body main .hulu .try-btn {
+  margin-top: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #F77E11;
+  width: 400px;
+  height: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .hulu .try-btn .text {
+  font-size: 24px;
+  display: block;
+}
+body footer {
+  background-color: #242424;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer p {
+  font-family: "凸版文久見出しゴシック";
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+body footer p span {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */
